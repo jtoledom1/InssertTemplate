@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+    body{
+    margin: 0px;
+    background-color:#8AA6A3;
+    }
+    
+*{
+    box-sizing: border-box;
+}
+.cl1{
+    background-color:#10403B;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    padding: 10px;
+}
+.cl2{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cl3{
+    background-color: #BFBFBF;
+    position: relative;
+    top: 20px;
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 90%; 
+    max-width: 550px; 
+    height: 500px;
+}
+.cl3m{
+    background-color: #BFBFBF;
+    position: relative;
+    top: 20px;
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 90%; 
+    max-width: 550px; 
+    height: fit-content;
+    margin-top: 10px;
+}
+#smt{
+    border-radius: 4px;
+    padding: 6px;
+}
+#titel{
+    border-style: groove;
+    border-radius: 4px;
+    padding: 6px;
+}
+#TiC3{
+    font-size: xx-large;
+}
+
+#lbl1{
+    font-size: xx-large;
+}
+
+input[type="submit"]{
+    background-color: white;   
+}
+
+input[type="text"]{
+    border-radius: 5px;
+}
+input[type="password"]{
+    border-radius: 5px;
+}
+.btns{
+    background-color: white;
+    font-size: medium;
+    color: black;
+    cursor: crosshair;
+    opacity: 1;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+#frm1{
+    background-color: #4C5958;
+}
+
+#lbl1{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#lblMeasur{
+    padding-left: 10px;
+}
+input[type="Text"]:focus{
+    background-color: #127369;
+    color: white;
+}
+input[type="Password"]:focus{
+    background-color: #127369;
+    color: white;
+}
+input[type="submit"]:focus{
+    width: 30%;
+    border-radius: 30px;
+}
+    </style>
+    <title>Gym-Organizer</title>
+</head>
+<body>
+    <label id="lbl1" class="lbls">Insertar Cliente</label>
+    <div class="cl1">
+        
+        <div class="cl2">
+        <input type="submit" value="Visualizar" id="btn1" class="btns" >
+        </div>
+        
+    </div>
+    
+    <div class="cl3" id ="smt">
+        <div class="cl2" id ="titel">
+            <label class="lbls" id="TiC3">Ingrese al cliente:</label>
+        </div>
+        <form action="InsertClinet.php" method="post">
+
+            <div class="cl2" id ="smt">
+                <label class="lbls"> Nombre </label>        
+            </div>
+            
+            <div class="cl2" id ="smt" >
+                <input type="text" name="Nombre">
+                
+            </div>
+    
+            <div class="cl2" id ="smt">
+                <label class="lbls"> Apellido </label>       
+            </div>
+            
+            <div class="cl2" id ="smt" >
+                <input type="text" name="Apellido">
+            </div>
+    
+            <div class="cl2" id ="smt">
+                
+                <label class="lbls"> telefono </label>        
+                
+            </div>
+            
+            <div class="cl2" id ="smt" >
+                <input type="text" name="telefono">
+            </div>
+    
+            <div class="cl2" id ="smt">
+                <label class="lbls"> email </label>        
+            </div>
+            
+            <div class="cl2" id ="smt" >
+                <input type="text" name="email">
+            </div>
+            <br>
+    
+            <div class="cl2" id ="btns">
+                <input type="submit" value="Registrar" id="btn2" class="btns">
+             </div>
+    
+        </form>
+    </div>
+
+
+</body>
+</html>
